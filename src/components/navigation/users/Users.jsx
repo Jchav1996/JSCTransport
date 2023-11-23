@@ -1,29 +1,29 @@
 import { Link, useLoaderData } from "react-router-dom";
 
-export async function loader(){
+export async function loader() {
+  try {
     const response = await fetch(
-        "https://random-data-api.com/api/v2/users?size=10"
+      "https://random-data-api.com/api/v2/users?size=10"
     );
     const data = await response.json();
     console.log(data);
     return data;
-} catch (error) {
+  } catch (error) {
     console.error("Error fecthing users:", error);
     return [];
+  }
 }
 
 export const Users = () => {
-    const users = useLoaderData();
+  const users = useLoaderData();
 
-
-    return (
-        <ul>
-            {users.map((user) => (
-             <li key={user.id}>
-                <Link to={`/user/$user.email}`}>
-                </Link>
-            </li>
-                ))}
-        </ul>
-    );
-}
+  return (
+    <ul>
+      {users.map((user) => (
+        <li key={user.id}>
+          <Link to={`/user/$user.email}`}></Link>
+        </li>
+      ))}
+    </ul>
+  );
+};
