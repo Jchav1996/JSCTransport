@@ -9,7 +9,8 @@ import { Navbar } from './components/navigation/Navbar.jsx';
 import { Hero } from './components/navigation/hero/Hero.jsx';
 import { Users, loader as usersLoader } from "./components/Users.jsx";
 import User, { loader } from "./components/Users.jsx";
-
+import { Quote } from './components/navigation/quote/Quote.jsx';
+import { CONTACT } from './components/navigation/contact/Contact.jsx';
 
 const router = createBrowserRouter([
   {
@@ -37,7 +38,17 @@ const router = createBrowserRouter([
     element: <User />
     loader: Loader,
   },
-
+    path: "/about",
+    element: <ABOUT />
+  },
+  {
+    path: "/quote",
+    element: <Quote />
+  },
+  {
+    path: "/contact",
+    element: <CONTACT />
+  }
 ])
 
 

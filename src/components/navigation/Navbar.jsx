@@ -14,7 +14,8 @@ export function Navbar () {
     </nav>
     <Outlet/>
     <footer>
-        <p>footer bby</p>
+
+        <p>Copyright © 2023 All rights reserved</p>
     </footer>
     </>
     );
