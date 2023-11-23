@@ -1,3 +1,4 @@
+/* eslint-disable no-unused-vars */
 import React from 'react'
 import ReactDOM from 'react-dom/client'
 import App from './App.jsx'
@@ -6,19 +7,37 @@ import { RouterProvider, createBrowserRouter } from 'react-router-dom';
 import { ABOUT } from './components/navigation/about/About.jsx';
 import { Navbar } from './components/navigation/Navbar.jsx';
 import { Hero } from './components/navigation/hero/Hero.jsx';
+import { Users, loader as usersLoader } from "./components/Users.jsx";
+import User, { loader } from "./components/Users.jsx";
 import { Quote } from './components/navigation/quote/Quote.jsx';
 import { CONTACT } from './components/navigation/contact/Contact.jsx';
 
 const router = createBrowserRouter([
   {
-    path:"/",
-    element: <Navbar/>,
-    children:[
+    path: "/",
+    element: <Navbar />,
+    children: [
       {
         path: "/home",
-        element: <Hero /> 
-    },
+        element: <Hero />
+      },
+      {
+        path: "/about",
+        element: <ABOUT />
+      }
+    ]
+  },
   {
+    path: "/users",
+    element: <Users />
+    loader: usersLoader,
+  },
+
+  {
+    path: "user/:email",
+    element: <User />
+    loader: Loader,
+  },
     path: "/about",
     element: <ABOUT />
   },
@@ -30,16 +49,12 @@ const router = createBrowserRouter([
     path: "/contact",
     element: <CONTACT />
   }
-
-]
-    
-  }
 ])
 
 
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
-    <RouterProvider router={router}/>
+    <RouterProvider router={router} />
   </React.StrictMode>,
 )
