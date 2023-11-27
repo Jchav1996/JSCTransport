@@ -1,14 +1,10 @@
-import "./quote.css"
+import "./quote.css";
 
 export function Quote () {
     return (
         
-<div className='quote'>
-<br></br>
-    <br></br>
-    <br></br>
-    <br></br>
-    <br></br>
+<div className="quote">
+
 <h1>Hello Quote</h1>
 </div>
 );

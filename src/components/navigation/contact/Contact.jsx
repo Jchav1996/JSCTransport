@@ -1,7 +1,8 @@
+import "./contact.css";
 
 export function CONTACT() {
     return (
-        <div className="container">
+        <div className="contact">
                 <br></br>
     <br></br>
     <br></br>
