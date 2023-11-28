@@ -1,7 +1,7 @@
 export function Hero() {
     return (
         <div className="container">
-<img src="public\JSCtruck.jpg"/>
+<img src="/JSCtruck.jpg"/>
 <h1>
         JSC Transport is commited to making
         <br></br>
