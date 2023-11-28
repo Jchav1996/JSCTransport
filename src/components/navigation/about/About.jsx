@@ -8,7 +8,7 @@ export function About() {
       <br></br>
       <br></br>
 
-      <img id="logo" src="public\jsclogo.jpg"/>
+      <img id="logo" src="/jsclogo.jpg"/>
       
       <div className="content">
         <h3>What is JSC Transport?</h3>
