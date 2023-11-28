@@ -4,25 +4,21 @@ import ReactDOM from "react-dom/client";
 import App from "./App.jsx";
 import "./index.css";
 import { RouterProvider, createBrowserRouter } from "react-router-dom";
-import { About } from "./components/navigation/about/About.jsx";
-import { Navbar } from "./components/navigation/Navbar.jsx";
-import { Hero } from "./components/navigation/hero/Hero.jsx";
-import {
-  Users,
-  loader as usersLoader,
-} from "./components/navigation/users/Users.jsx";
+import { About } from "./components/about/About.jsx";
+import { Users, loader as usersLoader } from "./components/users/Users.jsx";
 // import { User, loader as userLoader } from "./components/Users.jsx";
-import { Quote } from "./components/navigation/quote/Quote.jsx";
-import { CONTACT } from "./components/navigation/contact/Contact.jsx";
+import { Quote } from "./components/quote/Quote.jsx";
+import { CONTACT } from "./components/contact/Contact.jsx";
+import { Root } from "./Root.jsx";
 
 const router = createBrowserRouter([
   {
     path: "/",
-    element: <Navbar />,
+    element: <Root />,
     children: [
       {
-        path: "/home",
-        element: <Hero />,
+        path: "/",
+        element: <App />,
       },
       {
         path: "/about",
@@ -49,7 +45,6 @@ const router = createBrowserRouter([
   //   element: <User />
   //   loader: Loader,
   // },
-
 ]);
 
 ReactDOM.createRoot(document.getElementById("root")).render(
