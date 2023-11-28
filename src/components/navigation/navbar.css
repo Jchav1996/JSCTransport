@@ -46,3 +46,36 @@ body {
     height: 100vh;
     opacity: 30%;
   }
+
+  button {
+    background-color: red;
+    width: 120px;
+    height: 69px;
+    border-radius: 10px;
+    color: white;
+    font-size: large;
+    border: hidden;
+    content-visibility: auto;
+    margin-inline: 600px;
+    margin-top: 20px;
+  }
+
+footer {
+  background-color: rgb(20 17 17);
+    color: white;
+    display: flex;
+    justify-content: center;
+    margin-top: 204px;
+}
+h1 {
+  color: white;
+    width: 1050px;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    margin-top: -395px;
+    font-size: 40px;
+    font-family: math;
+    font-style: italic;
+}
+
