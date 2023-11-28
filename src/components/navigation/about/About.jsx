@@ -22,7 +22,7 @@ export function About() {
           the best rates on the market thanks to our primary brokers and
           dedicated lanes, we work hard for you to make sure our partnership
           grows solid and strong. Integrity, efficiency, and teamwork are at the
-          heart of what we do, and you will find that attitude in our office
+          heart of what we do, and you'll find that attitude in our office
           staff.
         </p>
       </div>
