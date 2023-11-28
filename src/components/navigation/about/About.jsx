@@ -3,11 +3,12 @@ import "./about.css";
 export function About() {
   return (
     <div className="about">
+      <title>About</title>
       <br></br>
       <br></br>
       <br></br>
 
-      <img id="logo" src="src\images\jsclogo.jpg"/>
+      <img id="logo" src="public\jsclogo.jpg"/>
       
       <div className="content">
         <h3>What is JSC Transport?</h3>
