@@ -79,3 +79,10 @@ h1 {
     font-style: italic;
 }
 
+#mainlogo {
+  width: 480px;
+  height: 410px;
+  opacity: inherit;
+  margin-inline: 420px;
+  margin-top: 204px;
+}
