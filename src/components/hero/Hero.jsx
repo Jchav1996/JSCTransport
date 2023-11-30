@@ -1,3 +1,5 @@
+import { Link  } from "react-router-dom";
+
 export function Hero() {
   return (
     <div className="container">
@@ -7,7 +9,7 @@ export function Hero() {
         <br></br>
         your Logistic needs easy and simple
       </h1>
-      <button>Get a Quote Now</button>
+      <Link to="quote">Get a Quote Now</Link>
       
       <img id="mainlogo" src="/jsclogo.jpg"/>
 
