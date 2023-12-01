@@ -1,5 +1,6 @@
 // eslint-disable-next-line no-unused-vars
 import React, { useState, useEffect } from 'react';
+import "./HeroSlideShow.css";
 import slide1 from "../img/truck3.jpg"
 import slide2 from "../img/truck1.jpg"
 import slide3 from "../img/truck2.jpg"
