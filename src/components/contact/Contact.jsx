@@ -1,8 +1,8 @@
 import "./contact.css";
 import { MapContainer, Popup, Marker, TileLayer } from "react-leaflet";
 import { Map } from "../map/Map";
+
 export function CONTACT() {
-  const pinpoint = [25.8379059, -80.204855]
   return (
     <div className="contact">
         <br></br>
