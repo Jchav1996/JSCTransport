@@ -1,5 +1,5 @@
 import "./contact.css";
-import { Map } from "../map/Map"
+import { Map } from "../map/Map";
 
 export function CONTACT() {
   return (
