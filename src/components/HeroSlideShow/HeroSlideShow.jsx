@@ -35,7 +35,7 @@ const HeroSlideShow = () => {
       <button onClick={prevSlide}>Previous</button>
       {slides.map((slide, index) => (
         <div key={index} className={`slide ${index === currentSlide ? 'active' : ''}`}>
-          <img src={slide.image} alt={slide.description} />
+          <img id='heroImg' src={slide.image} alt={slide.description} />
           <p>{slide.description}</p>
         </div>
       ))}
