@@ -1,6 +1,6 @@
 import "./contact.css";
 import { MapContainer, Popup, Marker, TileLayer } from "react-leaflet";
-
+import { Map } from "../map/Map";
 export function CONTACT() {
   const pinpoint = [25.8379059, -80.204855]
   return (
@@ -12,17 +12,7 @@ export function CONTACT() {
         <br></br>
         <br></br>
       
-<MapContainer center={pinpoint} zoom={13} scrollWheelZoom={false}>
-    <TileLayer
-      attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
-      url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
-    />
-    <Marker position={pinpoint}>
-      <Popup>
-        A pretty CSS3 popup. <br /> Easily customizable.
-      </Popup>
-    </Marker>
-  </MapContainer>,
+      <Map />
       <h1>Hello Contact</h1>
     </div>
   );
