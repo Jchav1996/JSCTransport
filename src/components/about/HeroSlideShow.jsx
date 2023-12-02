@@ -1,11 +1,14 @@
 // eslint-disable-next-line no-unused-vars
 import React, { useState, useEffect } from 'react';
+import slide1 from "../img/truck3.jpg"
+import slide2 from "../img/truck1.jpg"
+import slide3 from "../img/truck2.jpg"
 
 const HeroSlideShow = () => {
   const slides = [
-    {image: 'https://www.britelogistics.com/wp-content/uploads/2019/06/Brite-Logistics-Chicago-Blue-new-modern-trucks-Volvo-Freightliner-at-warehouse-bright.jpg'},
-    {image: 'https://cdn.producebusiness.com/2022/06/ygAhGTCL-may-featuretransportation-featured.jpg'},
-    {image: 'https://tempuslogix.com/wp-content/uploads/2022/05/Truck-Shipping-Tips-1024x576.jpg'}
+    {image: slide1},
+    {image: slide2},
+    {image: slide3},
   ];
 
   const [currentSlide, setCurrentSlide] = useState(0);
