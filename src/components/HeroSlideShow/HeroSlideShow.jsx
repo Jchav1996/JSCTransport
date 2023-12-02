@@ -8,9 +8,9 @@ import slide3 from "../img/truck2.jpg"
 
 const HeroSlideShow = () => {
   const slides = [
-    {image: slide1},
-    {image: slide2},
-    {image: slide3},
+    { image: slide1 },
+    { image: slide2 },
+    { image: slide3 },
   ];
 
   const [currentSlide, setCurrentSlide] = useState(0);
@@ -19,15 +19,15 @@ const HeroSlideShow = () => {
     const timer = setInterval(() => {
       setCurrentSlide((prevCurrentSlide) => (prevCurrentSlide + 1) % slides.length);
     }, 15000);
-  
+
     return () => clearInterval(timer);
   }, [slides.length]);
   const prevSlide = () => {
     setCurrentSlide(prevCurrentSlide => (prevCurrentSlide - 1 + slides.length) % slides.length);
   };
-  
+
   const nextSlide = () => {
-    setCurrentSlide(prevCurrentSlide => (prevCurrentSlide + 1) % slides.length);
+    setCurrentSlide(prevCurrentSlide => (prevCurrentSlide + 1 + slides.length) % slides.length);
   };
 
   return (

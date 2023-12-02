@@ -25,29 +25,29 @@
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
-  background-color: #00000080;
+  background-color: #29292921;
   color: white;
   border: none;
   cursor: pointer;
   padding: 5px;
+  z-index: 50;
 }
 
 .hero-slide-show button:hover {
-  background-color: rgba(0, 0, 0, 0.8);
+  background-color: #000000cc;
 }
 
 .hero-slide-show button:nth-of-type(1) {
-  left: 10px;
+  left: 3px;
 }
 
 .hero-slide-show button:nth-of-type(2) {
-  right: 10px;
+  right: 3px;
 }
 
-/* Responsive styles */
-@media screen and (max-width: 600px) {
+@media screen and (max-width: auto) {
   .hero-slide-show .slide {
-    height: 200px;
+    height: 500px;
   }
 
   .hero-slide-show button {
