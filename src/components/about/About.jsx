@@ -1,4 +1,4 @@
-import HeroSlideShow from "./HeroSlideShow";
+import HeroSlideShow from "../HeroSlideShow/HeroSlideShow";
 import "./about.css";
 
 
