@@ -25,11 +25,11 @@
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: #00000080;
   color: white;
   border: none;
   cursor: pointer;
-  padding: 10px;
+  padding: 5px;
 }
 
 .hero-slide-show button:hover {
