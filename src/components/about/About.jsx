@@ -1,8 +1,13 @@
 
-import HeroSlideShow from "../HeroSlideShow/HeroSlideShow";
+import HeroSlideShow from "./HeroSlideShow.jsx";
 import "./about.css";
 
+
+
 export function About() {
+
+  
+
   return (
     <div className="about">
       <title>About</title>
@@ -28,6 +33,7 @@ export function About() {
           heart of what we do, and you will find that attitude in our office
           staff.
         </p>
+        <HeroSlideShow></HeroSlideShow>
       </div>
     </div>
   );
