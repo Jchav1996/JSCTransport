@@ -2,7 +2,6 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
 import App from "./App.jsx";
-import "./index.css";
 import { RouterProvider, createBrowserRouter } from "react-router-dom";
 import { About } from "./components/about/About.jsx";
 import { Users, loader as usersLoader } from "./components/users/Users.jsx";
@@ -10,6 +9,7 @@ import { Users, loader as usersLoader } from "./components/users/Users.jsx";
 import { Quote } from "./components/quote/Quote.jsx";
 import { CONTACT } from "./components/contact/Contact.jsx";
 import { Root } from "./Root.jsx";
+// import { Map } from './components/map/Map.jsx';
 
 
 const router = createBrowserRouter([
@@ -20,10 +20,6 @@ const router = createBrowserRouter([
       {
         path: "/",
         element: <App />,
-      },
-      {
-        path: "/about",
-        element: <About />,
       },
       {
         path: "/quote",
