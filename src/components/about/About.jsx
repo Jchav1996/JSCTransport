@@ -1,8 +1,13 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
 >>>>>>> main
 import HeroSlideShow from "../HeroSlideShow/HeroSlideShow";
+=======
+
+import HeroSlideShow from "./HeroSlideShow.jsx";
+>>>>>>> 57292db81b01c8fc70e0eafee9b9bad6475c3d4d
 import "./about.css";
 
 
@@ -23,10 +28,15 @@ export function About() {
       <div className="content">
         <h3>What is JSC Transport?</h3>
 <<<<<<< HEAD
+<<<<<<< HEAD
 
         <HeroSlideShow />
 =======
 >>>>>>> main
+=======
+
+        <HeroSlideShow />
+>>>>>>> 57292db81b01c8fc70e0eafee9b9bad6475c3d4d
         <p>
           J.S.C Transport Enterprises Corp. is a founded and operated trucking company based in Miami by family in
           the growth. We are motivated, highly skilled and honest local trucking

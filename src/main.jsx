@@ -10,6 +10,7 @@ import { Users, loader as usersLoader } from "./components/users/Users.jsx";
 import { Quote } from "./components/quote/Quote.jsx";
 import { CONTACT } from "./components/contact/Contact.jsx";
 import { Root } from "./Root.jsx";
+import { Map } from './components/map/Map.jsx';
 
 
 const router = createBrowserRouter([
