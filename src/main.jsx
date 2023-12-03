@@ -11,6 +11,7 @@ import { Quote } from "./components/quote/Quote.jsx";
 import { CONTACT } from "./components/contact/Contact.jsx";
 import { Root } from "./Root.jsx";
 
+
 const router = createBrowserRouter([
   {
     path: "/",

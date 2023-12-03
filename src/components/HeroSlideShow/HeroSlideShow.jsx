@@ -1,16 +1,25 @@
 // eslint-disable-next-line no-unused-vars
 import React, { useState, useEffect } from 'react';
+<<<<<<< HEAD:src/components/HeroSlideShow/HeroSlideShow.jsx
 import "./HeroSlideShow.css";
 
+=======
+>>>>>>> main:src/components/about/HeroSlideShow.jsx
 import slide1 from "../img/truck3.jpg"
 import slide2 from "../img/truck1.jpg"
 import slide3 from "../img/truck2.jpg"
 
 const HeroSlideShow = () => {
   const slides = [
+<<<<<<< HEAD:src/components/HeroSlideShow/HeroSlideShow.jsx
     { image: slide1 },
     { image: slide2 },
     { image: slide3 },
+=======
+    {image: slide1},
+    {image: slide2},
+    {image: slide3},
+>>>>>>> main:src/components/about/HeroSlideShow.jsx
   ];
 
   const [currentSlide, setCurrentSlide] = useState(0);

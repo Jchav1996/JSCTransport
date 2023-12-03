@@ -1,8 +1,16 @@
+<<<<<<< HEAD
 
+=======
+>>>>>>> main
 import HeroSlideShow from "../HeroSlideShow/HeroSlideShow";
 import "./about.css";
 
+
+
 export function About() {
+
+  
+
   return (
     <div className="about">
       <title>About</title>
@@ -14,8 +22,11 @@ export function About() {
       
       <div className="content">
         <h3>What is JSC Transport?</h3>
+<<<<<<< HEAD
 
         <HeroSlideShow />
+=======
+>>>>>>> main
         <p>
           J.S.C Transport Enterprises Corp. is a founded and operated trucking company based in Miami by family in
           the growth. We are motivated, highly skilled and honest local trucking
@@ -28,6 +39,7 @@ export function About() {
           heart of what we do, and you will find that attitude in our office
           staff.
         </p>
+        <HeroSlideShow></HeroSlideShow>
       </div>
     </div>
   );
