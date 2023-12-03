@@ -21,14 +21,6 @@ dist-ssr
 *.ntvs*
 *.njsproj
 *.sln
-*.sw?
-<<<<<<< HEAD
-<<<<<<< HEAD
-.vercel
-=======
-.env
->>>>>>> main
-=======
+*.sw
 .env
 .vercel
->>>>>>> 57292db81b01c8fc70e0eafee9b9bad6475c3d4d

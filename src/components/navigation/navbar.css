@@ -1,53 +1,47 @@
 body {
-    height: 100vh;
-    margin: 0;
-    background: black;
-    font-family: 'Inter', sans-serif;
-    font-family: 'Libre Baskerville', serif;
-    font-family: 'Merriweather', serif;
-    font-family: 'Mooli', sans-serif;
-    font-family: 'Mulish', sans-serif;
-    font-family: 'Pridi', serif;
-    font-family: 'Roboto', sans-serif;
-    font-family: 'Signika', sans-serif;
-    background-clip: fixed;
-    background-attachment: fixed;
-    }
-  
-  .navbar {
-    display: flex;
-    position: fixed;
-    top: 0;
-    width: 100%;
-    align-items: baseline;
-    background:black;
-    z-index: 1000;
-  }
-  
-  .navbar a {
-    float: left;
-    font-size: 25px;
-    color: white;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-  }
+	height: 100vh;
+	margin: 0;
+	background: black;
+	font-family: "Inter", sans-serif;
+	font-family: "Libre Baskerville", serif;
+	font-family: "Merriweather", serif;
+	font-family: "Mooli", sans-serif;
+	font-family: "Mulish", sans-serif;
+	font-family: "Pridi", serif;
+	font-family: "Roboto", sans-serif;
+	font-family: "Signika", sans-serif;
+	background-clip: fixed;
+	background-attachment: fixed;
+}
 
-  h2 {
-    font-size: 26px;
-    font-style: italic;
-    text-shadow: -4px 3px 5px black;
-    color: #d91010;
-    margin-inline: 30px;
-  }
+.navbar {
+	display: flex;
+	position: sticky;
+	top: 0;
+	width: 100%;
+	align-items: baseline;
+	background: black;
+	z-index: 1000;
+}
 
-  img {
-    width: 100%;
-    height: 100vh;
-    opacity: 50%;
-  }
+.navbar a {
+	float: left;
+	font-size: 25px;
+	color: white;
+	text-align: center;
+	padding: 14px 16px;
+	text-decoration: none;
+}
 
-  button {
+h2 {
+	font-size: 26px;
+	font-style: italic;
+	text-shadow: -4px 3px 5px black;
+	color: #d91010;
+	margin-inline: 30px;
+}
+
+/* button {
     background-color: #d91010;
     width: 120px;
     height: 69px;
@@ -58,31 +52,20 @@ body {
     content-visibility: auto;
     margin-inline: 600px;
     margin-top: 20px;
-  }
+  } */
 
 footer {
-  background-color: rgb(20 17 17);
-    color: white;
-    display: flex;
-    justify-content: center;
-    margin-top: 204px;
-}
-h1 {
-  color: white;
-    width: 1050px;
-    margin: auto;
-    display: flex;
-    justify-content: center;
-    margin-top: -395px;
-    font-size: 40px;
-    font-family: math;
-    font-style: italic;
+	background-color: rgb(20 17 17);
+	color: white;
+	display: flex;
+	justify-content: center;
+	margin-top: 204px;
 }
 
 #mainlogo {
-  width: 480px;
-  height: 410px;
-  opacity: inherit;
-  margin-inline: 420px;
-  margin-top: 204px;
+	width: 480px;
+	height: 410px;
+	opacity: inherit;
+	margin-inline: 420px;
+	margin-top: 204px;
 }
