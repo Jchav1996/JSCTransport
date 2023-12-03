@@ -1,6 +1,6 @@
 // eslint-disable-next-line no-unused-vars
 import React, { useState, useEffect } from 'react';
-<<<<<<< HEAD
+
 <<<<<<< HEAD:src/components/HeroSlideShow/HeroSlideShow.jsx
 import "./HeroSlideShow.css";
 
