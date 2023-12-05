@@ -1,16 +1,19 @@
 /* eslint-disable react/prop-types */
 import GoogleMapReact from "google-map-react";
 import "./map.css";
+import { Draggable } from "leaflet";
 
 const apiKey = import.meta.env.VITE_GOOGLE_API;
 
 export const Map = () => {
 	const location = {
 		address: "2600 Northwest 69th Street, Miami, FL",
-		lat: 25.8379059,
-		lon: -80.204855,
+		lat: 25.836820,
+		lon: -80.240350,
 		zoomLevel: 20,
 	};
+	
+
 
 	return (
 		<div className="map">
@@ -18,6 +21,7 @@ export const Map = () => {
 
 			<div className="google-map">
 				<GoogleMapReact
+					options={{Draggable: false, zoomControlOptions: false}}
 					bootstrapURLKeys={{ key: apiKey }}
 					defaultCenter={[location.lat, location.lon]}
 					defaultZoom={location.zoomLevel}>
