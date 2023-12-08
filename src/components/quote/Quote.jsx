@@ -6,7 +6,7 @@ export function Quote() {
     const [count, setCount] = useState(0);
 
     return (
-        <div>
+        <div >
             <form><label>*Full name :</label>
                 <label></label>
                 <input type="text" required={true} />
