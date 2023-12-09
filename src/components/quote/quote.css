@@ -1,4 +1,29 @@
 .quote h1 {
     color: white;
     margin-top: 150px;
+
+}
+
+.card {
+    border-radius: 15px;
+    padding: 20px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    background-color: aliceblue;
+}
+
+.form-group {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+}
+form{
+    color:crimson;
+}
+.form-group label {
+    text-align: left;
+}
+
+.form-input {
+    text-align: right;
 }

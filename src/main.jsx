@@ -4,7 +4,7 @@ import ReactDOM from "react-dom/client";
 import App from "./App.jsx";
 import { RouterProvider, createBrowserRouter } from "react-router-dom";
 import { About } from "./components/about/About.jsx";
-import { Users, loader as usersLoader } from "./components/users/Users.jsx";
+import { Users, loader as usersLoader } from "./components/users/loader.js";
 // import { User, loader as userLoader } from "./components/Users.jsx";
 import { Quote } from "./components/quote/Quote.jsx";
 import { CONTACT } from "./components/contact/Contact.jsx";
@@ -31,11 +31,11 @@ const router = createBrowserRouter([
       },
     ],
   },
-  {
-    path: "/users",
-    element: <Users />,
-    loader: usersLoader,
-  },
+  // {
+  //   path: "/users",
+  //   element: <Users />,
+  //   loader: usersLoader,
+  // },
 
   // {
   //   path: "user/:email",
