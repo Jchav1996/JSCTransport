@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react"
-import { signInUser } from "../lib/firebase";
+import { signInUser } from "../../lib/firebase";
 import { useNavigate } from "react-router-dom";
 
 export function Login() {
@@ -36,10 +36,14 @@ const handleSubmit = async (event) => {
 }
 
     return (
-        <form onSubmit={handleSubmit}>
-            <input type="email" name="email" value={email} onChange={handleChange} />
-            <input type="password" name="password" value={password} onChange={handleChange} />
-            <button type="submit">Submit</button>
+        <form id="in" onSubmit={handleSubmit}>
+            <label for="username">Username:</label>
+            <input id="put" type="email" name="email" value={email} onChange={handleChange} />
+            <br></br>
+            <label for="password">Password:</label>
+            <input id="put" type="password" name="password" value={password} onChange={handleChange} />
+            <br></br>
+            <button id="sub" type="submit">Submit</button>
         </form>
     )
 }

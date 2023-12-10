@@ -2,9 +2,11 @@ import "./contact.css";
 import { Map } from "../map/Map";
 import { Team } from "./team";
 
+
 export function CONTACT() {
   return (
     <div className="page">
+      <h1 id="visit">Come Visit Us</h1>
 <div className="contact">
       <Map />
       <div className="right">
@@ -18,10 +20,8 @@ export function CONTACT() {
       <p>Call us at <a href="tel:7864547344">(786) 454-7344</a></p>
       </div>
       </div>
-      <div className="team">
+        <h1 id="meet">Meet the Team</h1>
       <Team />
-      </div>
-
     </div>
   );
 }

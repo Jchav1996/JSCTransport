@@ -12,7 +12,8 @@ import { Root } from "./Root.jsx";
 import { AuthProvider } from "./lib/context/auth-context.jsx";
 import RequireAuth from "./lib/require-auth.jsx";
 import { PrivateApp } from "./PrivateApp.jsx";
-import { Login } from "./components/Login.jsx";
+import { Login } from "./components/Login/Login.jsx";
+import { Page } from "./components/Login/Page.jsx";
 // import { Map } from './components/map/Map.jsx';
 
 const withAuthProvider = (Component, requireAuth = false,) => {
@@ -46,6 +47,10 @@ const router = createBrowserRouter([
         path: "/contact",
         element: <CONTACT />,
       },
+      {
+        path: "/login",
+        element: <Page />,
+      },
     ],
   },
   {
@@ -56,10 +61,6 @@ const router = createBrowserRouter([
     path: "/private",
     element: withAuthProvider(PrivateApp, true), 
     // true when private, nothing when public
-  },
-  {
-    path: "/login",
-    element: <Login />,
   },
 ]);
   // {

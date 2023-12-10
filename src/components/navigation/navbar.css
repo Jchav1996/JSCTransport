@@ -33,6 +33,12 @@ body {
 	padding: 14px 16px;
 	text-decoration: none;
 }
+.navbar a:hover {
+	opacity: 0.8;
+	background-color: red;
+	color: black;
+	border-radius: 12px;
+}
 
 h2 {
 	font-size: 26px;
@@ -41,19 +47,6 @@ h2 {
 	color: #d91010;
 	margin-inline: 30px;
 }
-
-/* button {
-    background-color: #d91010;
-    width: 120px;
-    height: 69px;
-    border-radius: 10px;
-    color: white;
-    font-size: large;
-    border: hidden;
-    content-visibility: auto;
-    margin-inline: 600px;
-    margin-top: 20px;
-  } */
 
 footer {
 	background-color: rgb(20 17 17);
