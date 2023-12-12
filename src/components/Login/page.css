@@ -1,0 +1,28 @@
+.log {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.logpic {
+    width: 300px;
+}
+
+form {
+    color: crimson;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    width: 14rem;
+}
+
+input {
+    height: 2rem;
+    font-size: 15px;
+}
+
+#sub {
+    height: 2rem;
+    width: 8rem;
+    margin-inline: 50px;
+}

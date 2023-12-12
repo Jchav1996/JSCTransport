@@ -1,0 +1,24 @@
+.team {
+    background-color: white;
+    display: flex;
+    justify-content: space-evenly;
+    padding: 20px;
+    border-radius: 44px;
+    margin: 20px;
+}
+
+.column img {
+    width: 200px;
+}
+
+.column2 img {
+    width: 200px;
+}
+
+.column3 img {
+    height: 267px;
+}
+
+.column4 img {
+    height: 267px;
+}

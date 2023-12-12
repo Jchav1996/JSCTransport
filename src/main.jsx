@@ -9,8 +9,26 @@ import { loader as usersLoader } from "./components/users/loader.js";
 import { Quote } from "./components/quote/Quote.jsx";
 import { CONTACT } from "./components/contact/Contact.jsx";
 import { Root } from "./Root.jsx";
+import { AuthProvider } from "./lib/context/auth-context.jsx";
+import RequireAuth from "./lib/require-auth.jsx";
+import { PrivateApp } from "./PrivateApp.jsx";
+import { Login } from "./components/Login/Login.jsx";
+import { Page } from "./components/Login/Page.jsx";
 // import { Map } from './components/map/Map.jsx';
 
+const withAuthProvider = (Component, requireAuth = false,) => {
+  return (
+    <AuthProvider>
+      {requireAuth ? (
+        <RequireAuth>
+          <Component />
+        </RequireAuth>
+      ) : (
+        <Component />
+      )}
+    </AuthProvider>
+  );
+};
 
 const router = createBrowserRouter([
   {
@@ -29,8 +47,26 @@ const router = createBrowserRouter([
         path: "/contact",
         element: <CONTACT />,
       },
+      {
+        path: "/login",
+        element: <Page />,
+      },
     ],
   },
+  {
+    path: "/",
+    element: <App />,
+  },
+  {
+    path: "/login",
+    element: <Page />,
+  },
+  {
+    path: "/private",
+    element: withAuthProvider(PrivateApp, true), 
+    // true when private, nothing when public
+  },
+]);
   // {
   //   path: "/users",
   //   element: <Users />,
@@ -42,7 +78,7 @@ const router = createBrowserRouter([
   //   element: <User />
   //   loader: Loader,
   // },
-]);
+
 
 ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>

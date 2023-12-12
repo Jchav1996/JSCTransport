@@ -1,7 +1,6 @@
 /* eslint-disable react/prop-types */
 import GoogleMapReact from "google-map-react";
 import "./map.css";
-import { Draggable } from "leaflet";
 
 const apiKey = import.meta.env.VITE_GOOGLE_API;
 
@@ -17,7 +16,7 @@ export const Map = () => {
 
 	return (
 		<div className="map">
-			<h2 className="map-h2">Come Visit Us</h2>
+			{/* <h2 className="map-h2">Come Visit Us</h2> */}
 
 			<div className="google-map">
 				<GoogleMapReact
