@@ -58,6 +58,10 @@ const router = createBrowserRouter([
     element: <App />,
   },
   {
+    path: "/login",
+    element: <Page />,
+  },
+  {
     path: "/private",
     element: withAuthProvider(PrivateApp, true), 
     // true when private, nothing when public
