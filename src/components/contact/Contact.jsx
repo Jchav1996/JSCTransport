@@ -1,6 +1,7 @@
 import "./contact.css";
 import { Map } from "../map/Map";
-import { Team } from "./Team";
+import { Team } from "./team";
+
 
 
 
