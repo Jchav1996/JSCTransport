@@ -36,12 +36,12 @@ const handleSubmit = async (event) => {
 }
 
     return (
-        <form id="in" onSubmit={handleSubmit}>
-            <label for="username">Username:</label>
-            <input id="put" type="email" name="email" value={email} onChange={handleChange} />
+        <form onSubmit={handleSubmit}>
+            <label htmlFor="username">Username:</label>
+            <input type="email" name="email" value={email} onChange={handleChange} />
             <br></br>
-            <label for="password">Password:</label>
-            <input id="put" type="password" name="password" value={password} onChange={handleChange} />
+            <label htmlFor="password">Password:</label>
+            <input type="password" name="password" value={password} onChange={handleChange} />
             <br></br>
             <button id="sub" type="submit">Submit</button>
         </form>

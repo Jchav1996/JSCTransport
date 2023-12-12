@@ -8,7 +8,7 @@
     width: 300px;
 }
 
-#in {
+form {
     color: crimson;
     display: flex;
     flex-direction: column;
@@ -16,7 +16,7 @@
     width: 14rem;
 }
 
-#put {
+input {
     height: 2rem;
     font-size: 15px;
 }
