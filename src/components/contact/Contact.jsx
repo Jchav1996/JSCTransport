@@ -1,8 +1,5 @@
 import "./contact.css";
 import { Map } from "../map/Map";
-import { Team } from "./team";
-
-
 
 
 export function CONTACT() {
@@ -23,7 +20,6 @@ export function CONTACT() {
       </div>
       </div>
         <h1 id="meet">Meet the Team</h1>
-      <Team />
     </div>
   );
 }
