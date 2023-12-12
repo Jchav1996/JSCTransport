@@ -55,11 +55,11 @@ const router = createBrowserRouter([
   },
   {
     path: "/",
-    element: <App />,
+    element: withAuthProvider(App),
   },
   {
     path: "/login",
-    element: <Page />,
+    element: withAuthProvider(Page) ,
   },
   {
     path: "/private",
