@@ -1,0 +1,52 @@
+.log {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.logpic {
+    width: 300px;
+}
+
+form {
+    color: crimson;
+    display: flex;
+    gap: .5rem;
+    flex-direction: column;
+    align-items: stretch;
+}
+
+input {
+    height: 2rem;
+    font-size: 15px;
+}
+
+#submit {
+    padding: 0.4rem;
+    width: 80%;
+    margin-inline: auto;
+    margin-top: 1rem;
+}
+
+.tabs {
+    display: flex;
+    gap: 1rem;
+    background-color: #6d181858;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 1rem;
+}
+.tabs button {
+    padding: 0.5rem;
+    border: none;
+    background-color: transparent;
+    color: white;
+    font-size: 15px;
+    cursor: pointer;
+}
+.tabs button:hover {
+    background-color: #ff0000;
+}
+.tabs button.active {
+    background-color: crimson;
+}

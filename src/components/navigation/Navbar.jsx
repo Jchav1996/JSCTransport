@@ -12,7 +12,7 @@ export function Navbar() {
 					<Link to="contact">Contact</Link>
 					<HashLink to="/#about">About Us</HashLink>
 					<Link to="quote">Quote</Link>
-					<Link to="login">Login</Link>
+					<Link to="auth">Login</Link>
 				</div>
 			</nav>
 		</>

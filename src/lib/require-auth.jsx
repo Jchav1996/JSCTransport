@@ -5,7 +5,7 @@ import { Navigate, useLocation } from "react-router-dom";
 
 function RequireAuth({
 	children,
-	to = "/login",
+	to = "/auth",
 }) {
 	const { currentUser } = useContext(AuthContext);
 	const location = useLocation();
