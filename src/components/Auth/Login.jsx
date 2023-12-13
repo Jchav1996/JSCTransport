@@ -23,7 +23,7 @@ export function Login() {
 			if (userCredentials) {
 				setFormFields({ email: "", password: "" });
 
-				navigate("/private");
+				navigate("/dashboard");
 			}
 		} catch (error) {
 			console.log("Error signing in user: ", error.message);

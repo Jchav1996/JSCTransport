@@ -11,6 +11,7 @@ import { AuthProvider } from "./lib/context/auth-context.jsx";
 import RequireAuth from "./lib/require-auth.jsx";
 import { PrivateApp } from "./PrivateApp.jsx";
 import Auth from "./components/Auth/Auth.jsx";
+import { Dashboard } from "./components/pribate/Dashboard.jsx";
 // import { Map } from './components/map/Map.jsx';
 
 const withAuthProvider = (Component, requireAuth = false) => {
@@ -51,9 +52,15 @@ const router = createBrowserRouter([
 		],
 	},
 	{
-		path: "/private",
+		path: "/dashboard",
 		element: withAuthProvider(PrivateApp, true),
 		// true when private, nothing when public
+		children: [
+			{
+				path: "/dashboard",
+				element: <Dashboard />,
+			},
+		],
 	},
 ]);
 
