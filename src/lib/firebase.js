@@ -4,6 +4,7 @@ import {
     onAuthStateChanged,
     signOut,
     signInWithEmailAndPassword,
+	createUserWithEmailAndPassword,
 } from "firebase/auth";
 
 const firebaseConfig = {
@@ -16,7 +17,7 @@ const firebaseConfig = {
 	measurementId: import.meta.env.VITE_MEASUREMENTID,
 };
 
-    const app = initializeApp(firebaseConfig);
+const app = initializeApp(firebaseConfig);
 const auth = getAuth(app);
 
 export const signInUser = async (email, password) => {
@@ -24,6 +25,14 @@ export const signInUser = async (email, password) => {
 
 	return await signInWithEmailAndPassword(auth, email, password);
 };
+
+export const signUpUser = async (email, password) => {
+	if (!email && !password) return;
+
+	return await createUserWithEmailAndPassword(auth, email, password);
+};
+
+
 
 export const userStateListener = (callback) => {
 	return onAuthStateChanged(auth, callback);

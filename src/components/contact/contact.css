@@ -1,57 +1,66 @@
 .contact h1 {
-    color: red;
+	color: red;
 }
 
 .contact {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-around;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: space-around;
 }
+
 .right {
-    background-color: white;
-    width: 350px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    border-radius: 11px;
-    font-weight: bold;
+	background-color: white;
+	width: 350px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	border-radius: 11px;
+	font-weight: bold;
 }
 #meet {
-    color: white;
-    height: 50px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+	color: white;
+	height: 50px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
 }
 #visit {
-    text-transform: uppercase;
-    font-size: 1.5rem;
-    padding: 20px;
-    color: white;
-    display: flex;
-    justify-content: center;
+	text-transform: uppercase;
+	font-size: 1.5rem;
+	padding: 20px;
+	color: white;
+	display: flex;
+	justify-content: center;
 }
 
 @media screen and (max-width: 750px) {
-    .contact {
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        justify-content: center;
-        width: 450px;
-    }  
-    .navbar {
-        display: flex;
-        position: fixed;
-        top: 0;
+	.contact {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+		width: 85%;
+		margin-inline: auto;
+        gap: 20px;
+	}
+	.map {
+		order: 2;
+	}
+    .right {
         width: 100%;
-        align-items: center;
-        background: black;
-        z-index: 1000;
-        justify-content: center;
     }
-    h2 {
+	.navbar {
+		display: flex;
+		position: fixed;
+		top: 0;
+		width: 100%;
+		align-items: center;
+		background: black;
+		z-index: 1000;
+		justify-content: center;
+	}
+	h2 {
 		font-size: 18px;
 		font-style: italic;
 		text-shadow: -4px 3px 5px black;

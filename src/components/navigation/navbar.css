@@ -33,7 +33,22 @@ body {
 	padding: 14px 16px;
 	text-decoration: none;
 }
-.navbar a:hover {
+
+.navbar button {
+	float: left;
+	font-size: 25px;
+	color: white;
+	text-align: center;
+	padding: 14px 16px;
+	text-decoration: none;
+}
+navbar button:hover {
+	opacity: 0.8;
+	background-color: red;
+	color: black;
+	border-radius: 12px;
+}
+navbar a:hover {
 	opacity: 0.8;
 	background-color: red;
 	color: black;
@@ -90,7 +105,4 @@ footer {
 		padding: 14px 16px;
 		text-decoration: none;
 	}
-	
-
-	
 }
