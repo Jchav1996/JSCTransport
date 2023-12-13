@@ -54,25 +54,37 @@
 		display: flex;
 		position: fixed;
 		top: 0;
-		width: 100%;
+		width: 430px;
 		align-items: center;
 		background: black;
 		z-index: 1000;
 		justify-content: center;
+		margin-inline: -39px;
 	}
 	h2 {
-		font-size: 18px;
+		font-size: 14px;
 		font-style: italic;
-		text-shadow: -4px 3px 5px black;
+		text-shadow: -4px 3px 5px rgb(88 86 86);
 		color: #d91010;
-		margin-inline: 30px;
+		text-align: end;
+		margin: auto;
+		margin-top: 4px;
 	}
 	.navbar a {
 		float: left;
-		font-size: 15px;
+		font-size: 14px;
 		color: white;
 		text-align: center;
 		padding: 14px 16px;
 		text-decoration: none;
 	}
+	.navbar button {
+		float: left;
+		font-size: 14px;
+		color: rgb(224, 29, 29);
+		text-align: center;
+		padding: 14px 16px;
+		text-decoration: none;
+		border-radius: 12px;
+}
 }

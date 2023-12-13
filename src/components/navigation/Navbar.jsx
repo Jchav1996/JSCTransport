@@ -15,7 +15,7 @@ export function Navbar() {
 					<h2> JSC Transport Enterprises Corp.</h2>
 					<Link to="/">Home</Link>
 					<Link to="contact">Contact</Link>
-					<HashLink to="/#about">About Us</HashLink>
+					<HashLink to="/#about">About</HashLink>
 					<Link to="quote">Quote</Link>
 					{currentUser ? (
 						<button onClick={SignOutUser}>Logout</button>
