@@ -61,6 +61,10 @@ const router = createBrowserRouter([
 				path: "/dashboard",
 				element: <Dashboard />,
 			},
+			{
+				path: "/dashboard/quote",
+				element: <Quote />,
+			},
 		],
 	},
 ]);

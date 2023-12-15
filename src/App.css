@@ -69,3 +69,23 @@ html {
 	bottom: 0;
 	right: 0;
 }
+
+
+.dashtest {
+	display: flex;
+	justify-content: center;
+    margin-bottom: 265px;
+    padding: 111px;
+}
+
+.dashtest h1 {
+	color: red;
+}
+
+@media screen and (max-width: 750px) {
+	.dashtest {
+		text-align: center;
+		margin-bottom: 351px;
+		padding: 155px;
+	}
+}

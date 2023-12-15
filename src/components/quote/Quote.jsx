@@ -25,12 +25,13 @@ export function Quote() {
         e.preventDefault();
         // Handle form submission with formData
         console.log(formData);
+        window.location.reload();
     };
 
     return (
         <div className='quoteForm'>
             <h1>Request a quote for Flatbed Services</h1>
-            <form id='quoteform' onSubmit={handleSubmit} className="card">
+            <form onSubmit={handleSubmit} id="card">
                 <div className="form-group">
                     <label>*Full name :</label>
                     <input
@@ -39,10 +40,7 @@ export function Quote() {
                         value={formData.fullName}
                         onChange={handleChange}
                         required
-                        className="form-input"
                     />
-                </div>
-                <div className="form-group">
                     <label>Company :</label>
                     <input
                         type="text"
@@ -51,30 +49,26 @@ export function Quote() {
                         onChange={handleChange}
                         className="form-input"
                     />
-                </div>
-                <div className="form-group">
                     <label>*Phone Number :</label>
                     <input
-                        type="text"
+                        type="tel"
                         name="phoneNumber"
                         value={formData.phoneNumber}
                         onChange={handleChange}
                         required
                         className="form-input"
                     />
-                </div>
-                <div className="form-group">
                     <label>*Your Email :</label>
                     <input
-                        type="text"
+                        type="email"
                         name="email"
                         value={formData.email}
                         onChange={handleChange}
                         required
                         className="form-input"
                     />
-                </div>
-                <div className="form-group">
+                    </div>
+                    <div className='right1'>
                     <label>*Pick-Up Origin :</label>
                     <input
                         type="text"
@@ -84,8 +78,7 @@ export function Quote() {
                         required
                         className="form-input"
                     />
-                </div>
-                <div className="form-group">
+
                     <label>*Drop Off Destination :</label>
                     <input
                         type="text"
@@ -95,8 +88,7 @@ export function Quote() {
                         required
                         className="form-input"
                     />
-                </div>
-                <div className="form-group">
+
                     <label>*Total Weight - (lbs) :</label>
                     <input
                         type="text"
@@ -106,8 +98,7 @@ export function Quote() {
                         required
                         className="form-input"
                     />
-                </div>
-                <div className="form-group">
+
                     <label>Additional Notes :</label>
                     <textarea
                         maxLength={200}
@@ -118,10 +109,8 @@ export function Quote() {
                         id='notes'
                     />
                 </div>
-                <button id="submitbutton" type="submit">
-				Submit
-			</button>
             </form>
+            <button id='submitbutton' type="submit" form="card">Submit</button>
         </div>
     );
 }
