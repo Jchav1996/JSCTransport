@@ -29,7 +29,7 @@ export function Quote() {
 
     return (
         <div className='quoteForm'>
-            {/* <h1>Request a quote for Flatbed Services</h1> */}
+            <h1>Request a quote for Flatbed Services</h1>
             <form id='quoteform' onSubmit={handleSubmit} className="card">
                 <div className="form-group">
                     <label>*Full name :</label>
@@ -43,7 +43,7 @@ export function Quote() {
                     />
                 </div>
                 <div className="form-group">
-                    Company :
+                    <label>Company :</label>
                     <input
                         type="text"
                         name="company"
@@ -97,7 +97,7 @@ export function Quote() {
                     />
                 </div>
                 <div className="form-group">
-                    <label>*Total Weight - (Ibs) :</label>
+                    <label>*Total Weight - (lbs) :</label>
                     <input
                         type="text"
                         name="totalWeight"
@@ -110,11 +110,12 @@ export function Quote() {
                 <div className="form-group">
                     <label>Additional Notes :</label>
                     <textarea
-                        maxLength={800}
+                        maxLength={200}
                         name="additionalNotes"
                         value={formData.additionalNotes}
                         onChange={handleChange}
                         className="form-input"
+                        id='notes'
                     />
                 </div>
                 <button id="submitbutton" type="submit">

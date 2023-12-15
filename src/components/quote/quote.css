@@ -3,23 +3,22 @@
 } */
 
 .quoteForm {
-    width: 75%;
-    margin: auto;
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    align-items: center;
 }
 
-.quote h1 {
-    color: white;
-    margin-top: 150px;
+.quoteForm h1 {
+    color: red;
 
 }
 
 .card {
     border-radius: 15px;
     padding: 20px;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    /* box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); */
     background-color: white;
+    width: 600px;
 }
 
 #submitbutton {
@@ -39,23 +38,25 @@
 
 .form-group {
     display: flex;
-    justify-content: space-between;
-    align-items: center;
     margin-bottom: 10px;
+    align-items: center;
+    justify-content: space-around;
+    margin-inline: 115px;
 }
 form{
     color:crimson;
 }
-.form-group label {
+/* .form-group label {
     text-align: left;
-}
+} */
 
-.form-input {
+/* .form-input {
     text-align: right;
-}
+} */
 
 #quoteform {
     display: flex;
     align-items: stretch;
-    margin-top: 35px;
+    margin: auto;
 }
+
