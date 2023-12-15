@@ -29,6 +29,7 @@ export function Quote() {
 
     return (
         <div className='quoteForm'>
+            {/* <h1>Request a quote for Flatbed Services</h1> */}
             <form id='quoteform' onSubmit={handleSubmit} className="card">
                 <div className="form-group">
                     <label>*Full name :</label>
@@ -98,7 +99,7 @@ export function Quote() {
                 <div className="form-group">
                     <label>*Total Weight - (Ibs) :</label>
                     <input
-                        type="number"
+                        type="text"
                         name="totalWeight"
                         value={formData.totalWeight}
                         onChange={handleChange}
@@ -116,9 +117,9 @@ export function Quote() {
                         className="form-input"
                     />
                 </div>
-                <div className="submitButton">
-                    <input type="submit" value="Submit" />
-                </div>
+                <button id="submitbutton" type="submit">
+				Submit
+			</button>
             </form>
         </div>
     );

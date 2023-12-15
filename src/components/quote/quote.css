@@ -22,8 +22,19 @@
     background-color: white;
 }
 
-.submitButton {
+#submitbutton {
     margin: auto;
+    width: 35%;
+    margin-inline: auto;
+    margin-top: 1rem;
+    background-color: #d91010;
+    border-radius: 10px;
+    color: #ffffff;
+    font-size: 1.2rem;
+    padding-block: 0.4rem;
+    text-decoration: none;
+    border: 2px solid rgba(255, 255, 255, 0.8);
+    transition: all 0.3s ease-in-out;
 }
 
 .form-group {
@@ -45,4 +56,6 @@ form{
 
 #quoteform {
     display: flex;
+    align-items: stretch;
+    margin-top: 35px;
 }
