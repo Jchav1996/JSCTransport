@@ -1,34 +1,128 @@
-import { useState } from 'react';
+import React, { useState } from 'react';
 import './quote.css';
 
 export function Quote() {
-    // eslint-disable-next-line no-unused-vars
-    const [count, setCount] = useState(0);
+    const [formData, setFormData] = useState({
+        fullName: '',
+        company: '',
+        phoneNumber: '',
+        email: '',
+        pickUpOrigin: '',
+        dropOffDestination: '',
+        totalWeight: '',
+        additionalNotes: '',
+    });
+
+    const handleChange = (e) => {
+        const { name, value } = e.target;
+        setFormData((prevData) => ({
+            ...prevData,
+            [name]: value,
+        }));
+    };
+
+    const handleSubmit = (e) => {
+        e.preventDefault();
+        // Handle form submission with formData
+        console.log(formData);
+    };
 
     return (
-        <div >
-            <form><label>*Full name :</label>
-                <label></label>
-                <input type="text" required={true} />
-                <br />Company :<input type="text" />
-                <br /><label>*Phone Number :<input type="number" required={true} />
-                </label>
-                <br />
-                <label>*Your Email :</label><input type="text" required={true} /><br />
-                <label>*Pick-Up Origin :<input required={true} />
-                    <br />
-                    <label>*Drop Off Destination :<input required={true} />
-                    </label>
-                    <br />
-                    <label>*Total Weight - (Ibs) :<input type="number" required={true} /></label>
-                    <label>
-                        <br />Additional Notes :</label>
-                    <br />
-                    <textarea maxLength={800} />
-                    <br />
-                </label>
-                <input type="submit" value="Submit" /></form>
-    </div>
+        <div className='quoteForm'>
+            <h1>Request a quote for Flatbed Services</h1>
+            <form id='quoteform' onSubmit={handleSubmit} className="card">
+                <div className="form-group">
+                    <label>*Full name :</label>
+                    <input
+                        type="text"
+                        name="fullName"
+                        value={formData.fullName}
+                        onChange={handleChange}
+                        required
+                        className="form-input"
+                    />
+                </div>
+                <div className="form-group">
+                    <label>Company :</label>
+                    <input
+                        type="text"
+                        name="company"
+                        value={formData.company}
+                        onChange={handleChange}
+                        className="form-input"
+                    />
+                </div>
+                <div className="form-group">
+                    <label>*Phone Number :</label>
+                    <input
+                        type="text"
+                        name="phoneNumber"
+                        value={formData.phoneNumber}
+                        onChange={handleChange}
+                        required
+                        className="form-input"
+                    />
+                </div>
+                <div className="form-group">
+                    <label>*Your Email :</label>
+                    <input
+                        type="text"
+                        name="email"
+                        value={formData.email}
+                        onChange={handleChange}
+                        required
+                        className="form-input"
+                    />
+                </div>
+                <div className="form-group">
+                    <label>*Pick-Up Origin :</label>
+                    <input
+                        type="text"
+                        name="pickUpOrigin"
+                        value={formData.pickUpOrigin}
+                        onChange={handleChange}
+                        required
+                        className="form-input"
+                    />
+                </div>
+                <div className="form-group">
+                    <label>*Drop Off Destination :</label>
+                    <input
+                        type="text"
+                        name="dropOffDestination"
+                        value={formData.dropOffDestination}
+                        onChange={handleChange}
+                        required
+                        className="form-input"
+                    />
+                </div>
+                <div className="form-group">
+                    <label>*Total Weight - (lbs) :</label>
+                    <input
+                        type="text"
+                        name="totalWeight"
+                        value={formData.totalWeight}
+                        onChange={handleChange}
+                        required
+                        className="form-input"
+                    />
+                </div>
+                <div className="form-group">
+                    <label>Additional Notes :</label>
+                    <textarea
+                        maxLength={200}
+                        name="additionalNotes"
+                        value={formData.additionalNotes}
+                        onChange={handleChange}
+                        className="form-input"
+                        id='notes'
+                    />
+                </div>
+                <button id="submitbutton" type="submit">
+				Submit
+			</button>
+            </form>
+        </div>
     );
 }
 

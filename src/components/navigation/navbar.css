@@ -37,18 +37,19 @@ body {
 .navbar button {
 	float: left;
 	font-size: 25px;
-	color: white;
+	color: rgb(224, 29, 29);
 	text-align: center;
 	padding: 14px 16px;
 	text-decoration: none;
+	border-radius: 12px;
 }
-navbar button:hover {
+.navbar button:hover {
 	opacity: 0.8;
 	background-color: red;
 	color: black;
 	border-radius: 12px;
 }
-navbar a:hover {
+.navbar a:hover {
 	opacity: 0.8;
 	background-color: red;
 	color: black;
@@ -89,20 +90,33 @@ footer {
 		background: black;
 		z-index: 1000;
 		justify-content: center;
+		margin-inline: 0px;
 	}
 	h2 {
-		font-size: 18px;
+		font-size: 14px;
 		font-style: italic;
-		text-shadow: -4px 3px 5px black;
+		text-shadow: -4px 3px 5px rgb(88 86 86);
 		color: #d91010;
-		margin-inline: 30px;
+		text-align: end;
+		margin: auto;
+		/* margin-inline-start: 80px; */
+		margin-top: 4px;
 	}
 	.navbar a {
 		float: left;
-		font-size: 15px;
+		font-size: 14px;
 		color: white;
 		text-align: center;
 		padding: 14px 16px;
 		text-decoration: none;
 	}
+	.navbar button {
+		float: left;
+		font-size: 14px;
+		color: rgb(224, 29, 29);
+		text-align: center;
+		padding: 14px 16px;
+		text-decoration: none;
+		border-radius: 12px;
+}
 }
