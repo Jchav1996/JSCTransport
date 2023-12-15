@@ -1,6 +1,13 @@
-/* body {
-    /* margin-top: 80px; */
- 
+/* * {
+    border: 1pt dashed red;
+} */
+
+.quoteForm {
+    width: 75%;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+}
 
 .quote h1 {
     color: white;
@@ -12,7 +19,11 @@
     border-radius: 15px;
     padding: 20px;
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-    background-color: #f8b0b6;
+    background-color: white;
+}
+
+.submitButton {
+    margin: auto;
 }
 
 .form-group {
@@ -30,4 +41,8 @@ form{
 
 .form-input {
     text-align: right;
+}
+
+#quoteform {
+    display: flex;
 }
