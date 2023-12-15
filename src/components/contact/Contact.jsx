@@ -19,7 +19,7 @@ export function CONTACT() {
 					</a>
 					<br></br>
 					<p>
-						Call us at <a href="*******">*******</a>
+						Call us at <a href="tel:7864547344">(786)454-6758</a>
 					</p>
 				</div>
 			</div>
