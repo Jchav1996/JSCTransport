@@ -88,4 +88,16 @@ html {
 		margin-bottom: 351px;
 		padding: 155px;
 	}
+
+	.hero-logo {
+		width: 130px;
+		border-right: 3px solid rgb(217 16 16 / 1);
+		border-top: 2px solid rgb(217 16 16 / 1);
+		border-left: 1px solid rgb(217 16 16 / 1);
+		height: auto;
+		position: absolute;
+		z-index: 2;
+		bottom: 0;
+		right: 0;
+	}
 }
